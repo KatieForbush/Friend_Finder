@@ -1,5 +1,5 @@
 //requireing the friends info
-var friends = require(`..data/friends.js`);
+var friends = require(`../data/friends.js`);
 
 //route
 module.exports = function(app) {
