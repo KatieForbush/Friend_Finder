@@ -1,6 +1,7 @@
 //set up dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
+var mysql = require('mysql');
 // var path = require('path');
 
 //create express server & sets up a port
