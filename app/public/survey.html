@@ -7,7 +7,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- //jquery -->
     
-        <script src="../server.js"></script>
+        <script src="server.js"></script>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 
                 <h3><strong>Question 2</strong></h3>
                 <h4>Music is something that you can't live without</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q2">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -46,7 +46,7 @@
                 <br>
                 <br>                <h3><strong>Question 3</strong></h3>
                 <h4>I would like a drinking buddy</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q3">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -57,7 +57,7 @@
                 <br>
                 <br>                <h3><strong>Question 4</strong></h3>
                 <h4>Religion is very important to me</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q4">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -68,7 +68,7 @@
                 <br>
                 <br>                <h3><strong>Question 5</strong></h3>
                 <h4>I enjoy traveling</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q5">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -79,7 +79,7 @@
                 <br>
                 <br>                <h3><strong>Question 6</strong></h3>
                 <h4>Animals are the best</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q6">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -90,7 +90,7 @@
                 <br>
                 <br>                <h3><strong>Question 7</strong></h3>
                 <h4>I enjoy going to the movies</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q7">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -101,7 +101,7 @@
                 <br>
                 <br>                <h3><strong>Question 8</strong></h3>
                 <h4>I like to play board games</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q8">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -112,7 +112,7 @@
                 <br>
                 <br>                <h3><strong>Question 9</strong></h3>
                 <h4>Do you support President Trump</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q9">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -123,7 +123,7 @@
                 <br>
                 <br>                <h3><strong>Question 10</strong></h3>
                 <h4>Ice cream is an acceptable dinner</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q10">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -164,6 +164,7 @@
             </div>
 
         </div>
+    </body>
         <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
@@ -178,7 +179,7 @@
                     isValid = false;
                 }
             });
-            $('.browser-default').each(function() {
+            $('.chosen-select').each(function() {
                 if ($(this).val() === ""){
                     isValid = false;
                 }
@@ -233,7 +234,3 @@
         // return false;
     });
 });
-
-</body>
-
-</html>

@@ -1,2 +1,2 @@
-# Friend_Finder
-Compatibility-based "FriendFinder" application
+<!-- # Friend_Finder
+Compatibility-based "FriendFinder" application -->

@@ -1,5 +1,5 @@
 //requireing the friends info
-var friends = require(`../data/friends.js`);
+var friends = require(`../data/friends.js/index.js.js`);
 
 //route
 module.exports = function(app) {
@@ -13,7 +13,7 @@ module.exports = function(app) {
     app.post(`/api/friends`, function(req, res){
 
         //compare user with other users or best match
-        var totalDiff = 0;
+        var totalDiff = 0;;
         //Object to hold match
         var bestMatch = {
             name: "",

@@ -4,6 +4,12 @@ var bodyParser = require('body-parser');
 var mysql = require('mysql');
 // var path = require('path');
 
+
+// Static files
+// needs to be called before the routes in order to work
+app.use(express.static("app/public"));
+
+
 //create express server & sets up a port
 var app = express(); 
 var port = process.env.PORT || 8080; 
@@ -29,9 +35,7 @@ if (process.env.JAWSDB_URL) {
     })
 }
 
-// Static files
-// needs to be called before the routes in order to work
-app.use(express.static('app/public'));
+
 
 //Listening to the port that was set up
 app.listen(port, () => console.log("Listening on port %s", port))
