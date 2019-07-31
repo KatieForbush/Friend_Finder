@@ -9,8 +9,8 @@ var app = express();
 var port = process.env.PORT || 8080; 
 
 //Router
-require('./routing/apiRoutes.js')(app); 
-require('./routing/htmlRoutes.js')(app);
+require('./app/routing/apiRoutes.js')(app); 
+require('./app/routing/htmlRoutes.js')(app);
 
 //Body Parser
 app.use(bodyParser.json());
